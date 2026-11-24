@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171f1a">
+  <title>Build Your World | Comparative Challenge</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./questions.js"></script>
+  <script defer src="./world.js"></script>
+  <script defer src="./game.js"></script>
+</head>
+<body>
+  <main class="game" id="game" data-mode="start">
+    <header class="hud">
+      <div class="brand"><span class="brand-icon" aria-hidden="true"></span> BUILD YOUR WORLD</div>
+      <div id="stage" class="stage"></div>
+      <div class="hud-actions">
+        <span id="blocks">Blocks: 0/25</span>
+        <button id="sound" aria-pressed="false" type="button">Sound off</button>
+      </div>
+    </header>
+    <div class="layout">
+      <section class="world" aria-label="Your voxel world">
+        <div class="world-label" aria-hidden="true"><span></span> YOUR WORLD</div>
+        <canvas id="world" role="img" aria-label="An empty grassy plot"></canvas>
+        <div id="inventory" class="inventory" aria-label="Construction progress"></div>
+      </section>
+      <section class="panel" aria-label="Comparative challenge">
+        <div id="screen"></div>
+        <div id="feedback" class="feedback" aria-live="polite" aria-atomic="true"></div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
